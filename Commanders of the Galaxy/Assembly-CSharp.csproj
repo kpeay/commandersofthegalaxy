@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{1A4FB8EC-A766-3812-077D-24A09D28DD85}</ProjectGuid>
+    <ProjectGuid>{67F439E4-799D-3403-ABF4-F8B8345FE0FD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -69,16 +69,16 @@
     <Compile Include="Assets\Resources\Tile.cs" />
     <Compile Include="Assets\Resources\TurnManager.cs" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/Daylen/Downloads/Tactics_Movement-Final (1)/Tactics Movement/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/Daylen/Documents/GitHub/commandersofthegalaxy/Commanders of the Galaxy/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/Daylen/Downloads/Tactics_Movement-Final (1)/Tactics Movement/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/Daylen/Documents/GitHub/commandersofthegalaxy/Commanders of the Galaxy/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/Daylen/Downloads/Tactics_Movement-Final (1)/Tactics Movement/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/Daylen/Documents/GitHub/commandersofthegalaxy/Commanders of the Galaxy/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Daylen/Downloads/Tactics_Movement-Final (1)/Tactics Movement/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/Daylen/Documents/GitHub/commandersofthegalaxy/Commanders of the Galaxy/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
