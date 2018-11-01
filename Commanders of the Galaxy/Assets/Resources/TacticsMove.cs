@@ -14,6 +14,7 @@ public class TacticsMove : MonoBehaviour
 
     public bool moving = false;
     public int move = 5;
+    public int range = 1;
     public float jumpHeight = 2;
     public float moveSpeed = 2;
     public float jumpVelocity = 4.5f;
@@ -88,6 +89,40 @@ public class TacticsMove : MonoBehaviour
             t.selectable = true;
 
             if (t.distance < move)
+            {
+                foreach (Tile tile in t.adjacencyList)
+                {
+                    if (!tile.visited)
+                    {
+                        tile.parent = t;
+                        tile.visited = true;
+                        tile.distance = 1 + t.distance;
+                        process.Enqueue(tile);
+                    }
+                }
+            }
+        }
+    }
+
+    public void FindEnemies()
+    {
+        ComputeAdjacencyLists(jumpHeight, null);
+        GetCurrentTile();
+
+        Queue<Tile> process = new Queue<Tile>();
+
+        process.Enqueue(currentTile);
+        currentTile.visited = true;
+        //currentTile.parent = ?? leave as null
+
+        while (process.Count > 0)
+        {
+            Tile t = process.Dequeue();
+
+            selectableTiles.Add(t);
+            t.selectable = true;
+
+            if (t.distance < range)
             {
                 foreach (Tile tile in t.adjacencyList)
                 {

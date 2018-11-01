@@ -8,6 +8,7 @@ public class Tile : MonoBehaviour
     public bool current = false;
     public bool target = false;
     public bool selectable = false;
+    public string unitTag = "null";
 
     public List<Tile> adjacencyList = new List<Tile>();
 
@@ -23,12 +24,15 @@ public class Tile : MonoBehaviour
 
     // Use this for initialization
     void Start () {
-		
+        
 	}
 	
 	// Update is called once per frame
 	void Update ()
     {
+        //Get information above tile
+        unitTag = GetUnit();
+
 	    if (current)
         {
             GetComponent<Renderer>().material.color = Color.magenta;
@@ -71,6 +75,43 @@ public class Tile : MonoBehaviour
         Checktile(-Vector3.forward, jumpHeight, target);
         Checktile(Vector3.right, jumpHeight, target);
         Checktile(-Vector3.right, jumpHeight, target);
+    }
+
+    //Gets the tag of the object above tile
+    public string GetUnit()
+    {
+
+        //Create raycast
+        RaycastHit hit;
+     
+        //Check to see what is above tile. If object is above, return tag. 
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.up), out hit, Mathf.Infinity))
+        {
+            if(hit.collider.tag == "NPC")
+            {
+                //Debug.Log("NPC");
+                return "NPC";
+
+            }
+            else if(hit.collider.tag == "Player")
+            {
+                
+                //Debug.Log("Player");
+                return "Player";
+            }
+           
+        }
+
+        if (!Physics.Raycast(transform.position, transform.TransformDirection(Vector3.up), out hit, Mathf.Infinity))
+        {
+            return "null";
+        }
+
+
+
+
+        return unitTag;
+
     }
 
     public void Checktile (Vector3 direction, float jumpHeight, Tile target)
