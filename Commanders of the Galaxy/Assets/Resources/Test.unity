@@ -41686,7 +41686,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moving: 0
   move: 5
-  range: 1
   jumpHeight: 2
   moveSpeed: 2
   jumpVelocity: 4.5
@@ -47378,6 +47377,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1976002196}
+  - component: {fileID: 1976002195}
   - component: {fileID: 1976002194}
   - component: {fileID: 1976002193}
   - component: {fileID: 1976002197}
@@ -47436,6 +47436,13 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!33 &1976002195
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1976002192}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &1976002196
 Transform:
   m_ObjectHideFlags: 0
@@ -47462,7 +47469,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moving: 0
   move: 5
-  range: 1
   jumpHeight: 2
   moveSpeed: 2
   jumpVelocity: 4.5
