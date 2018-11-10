@@ -4,13 +4,8 @@ using UnityEngine;
 
 public class PlayerMove : TacticsMove {
 
-<<<<<<< HEAD
     // Use this for initialization
     void Start ()
-=======
-	// Use this for initialization
-	void Start ()
->>>>>>> parent of f11b6ea... Added player model and idle animation
     {
         Init();
 
