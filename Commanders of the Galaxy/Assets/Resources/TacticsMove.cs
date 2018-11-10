@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TacticsMove : MonoBehaviour
 {
-    public static bool turn = false;
+    public bool turn = false;
 
     List<Tile> selectableTiles = new List<Tile>();
     GameObject[] tiles;
