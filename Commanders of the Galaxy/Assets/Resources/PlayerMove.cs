@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class PlayerMove : TacticsMove {
 
-    static Animator anim;
-
     // Use this for initialization
     void Start ()
     {
@@ -32,6 +30,7 @@ public class PlayerMove : TacticsMove {
         {
             Move();
         }
+
 	}
 
     void CheckMouse()

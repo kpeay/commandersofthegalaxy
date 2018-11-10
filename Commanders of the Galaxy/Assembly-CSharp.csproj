@@ -63,7 +63,6 @@
   <ItemGroup>
     <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\Player Combat.cs" />
-    <Compile Include="Assets\PlayerAnimController.cs" />
     <Compile Include="Assets\Resources\MenuScript.cs" />
     <Compile Include="Assets\Resources\NPCMove.cs" />
     <Compile Include="Assets\Resources\PlayerMove.cs" />
