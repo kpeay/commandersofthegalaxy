@@ -25,7 +25,11 @@ MonoBehaviour:
   m_MaxSize: {x: 22012, y: 14042}
   vertical: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 2099
+=======
+  controlID: 6786
+>>>>>>> parent of bc6190f... I hope this is okay
 =======
   controlID: 6786
 >>>>>>> parent of bc6190f... I hope this is okay
@@ -51,9 +55,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 19
     width: 1063
 =======
+=======
+>>>>>>> parent of bc6190f... I hope this is okay
     y: 92.8
     width: 1064
 >>>>>>> parent of bc6190f... I hope this is okay
@@ -137,7 +144,11 @@ MonoBehaviour:
   m_MaxSize: {x: 14006, y: 14042}
   vertical: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 2071
+=======
+  controlID: 6787
+>>>>>>> parent of bc6190f... I hope this is okay
 =======
   controlID: 6787
 >>>>>>> parent of bc6190f... I hope this is okay
@@ -359,7 +370,11 @@ MonoBehaviour:
   m_MaxSize: {x: 14006, y: 10021}
   vertical: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 1999
+=======
+  controlID: 6788
+>>>>>>> parent of bc6190f... I hope this is okay
 =======
   controlID: 6788
 >>>>>>> parent of bc6190f... I hope this is okay
@@ -439,7 +454,11 @@ MonoBehaviour:
     m_SelectedIDs: 08670000
     m_LastClickedID: 26376
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: ffffffff0000000062090000d00900003e0a0000e80b000030440000
+=======
+    m_ExpandedIDs: ffffffff0000000060090000ce0900003c0a0000d40b0000fc420000
+>>>>>>> parent of bc6190f... I hope this is okay
 =======
     m_ExpandedIDs: ffffffff0000000060090000ce0900003c0a0000d40b0000fc420000
 >>>>>>> parent of bc6190f... I hope this is okay
@@ -471,7 +490,11 @@ MonoBehaviour:
     m_SelectedIDs: bc200000
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: ffffffff0000000062090000d00900003e0a0000e80b000030440000
+=======
+    m_ExpandedIDs: ffffffff0000000060090000ce0900003c0a0000d40b0000fc420000
+>>>>>>> parent of bc6190f... I hope this is okay
 =======
     m_ExpandedIDs: ffffffff0000000060090000ce0900003c0a0000d40b0000fc420000
 >>>>>>> parent of bc6190f... I hope this is okay
@@ -639,6 +662,9 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
     m_ExpandedIDs: e4fbffff00000000421800000c1e0000a0200000
+<<<<<<< HEAD
+>>>>>>> parent of bc6190f... I hope this is okay
+=======
 >>>>>>> parent of bc6190f... I hope this is okay
     m_RenameOverlay:
       m_UserAcceptedRename: 0
