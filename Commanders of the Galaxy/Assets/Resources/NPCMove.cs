@@ -25,11 +25,11 @@ public class NPCMove : TacticsMove
 
         if(!moving)
         {
+            NPCMoving = false;
             FindNearestTarget();
             CalculatePath();
             FindSelectableTiles();
             actualTargetTile.target = true;
-            NPCMoving = false;
         }
         else
         {

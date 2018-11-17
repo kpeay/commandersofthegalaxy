@@ -195,7 +195,6 @@ public class TacticsMove : MonoBehaviour
 
             //FindEnemies();
             TurnManager.EndTurn();
-            
 
         }
     }

@@ -41,6 +41,9 @@ public class PlayerMove : TacticsMove {
 
     void CheckMouse()
     {
+
+        NPCMove.NPCMoving = false;
+
         if (Input.GetMouseButtonUp(0))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);

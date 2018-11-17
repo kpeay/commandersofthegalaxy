@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class PlayerAnimController : MonoBehaviour {
 
-    static Animator anim;
+    static Animator playerAnim;
 
 	// Use this for initialization
 	void Start () {
-        anim = GetComponent <Animator>();
+        playerAnim = GetComponent <Animator>();
 	}
 	
 	// Update is called once per frame
@@ -17,27 +17,13 @@ public class PlayerAnimController : MonoBehaviour {
 
         if (PlayerMove.playerMoving == false)
         {
-            anim.SetBool("Running", false);
+            playerAnim.SetBool("Running", false);
         }
 
         else
         {
-            anim.SetBool("Running", true);
+            playerAnim.SetBool("Running", true);
         }
 
 	}
-
-    /**
-    void OnAnimatorMove()
-    {
-        Animator animator = GetComponent<Animator>();
-
-        if (animator)
-        {
-            Vector3 newPosition = transform.position;
-            newPosition.z += animator.GetFloat("Runspeed") * Time.deltaTime;
-            transform.position = newPosition;
-        }
-    }
-    **/
 }
