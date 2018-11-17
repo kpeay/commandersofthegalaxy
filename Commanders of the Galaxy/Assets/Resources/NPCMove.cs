@@ -5,6 +5,7 @@ using UnityEngine;
 public class NPCMove : TacticsMove
 {
     GameObject target;
+    public static bool NPCMoving = false;
 
 	// Use this for initialization
 	void Start ()
@@ -28,10 +29,13 @@ public class NPCMove : TacticsMove
             CalculatePath();
             FindSelectableTiles();
             actualTargetTile.target = true;
+            NPCMoving = false;
         }
         else
         {
             Move();
+            NPCMoving = true;
+            PlayerMove.playerMoving = false;
         }
 	}
 

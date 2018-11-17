@@ -12,7 +12,8 @@ public class TacticsMove : MonoBehaviour
     Stack<Tile> path = new Stack<Tile>();
     Tile currentTile;
 
-    public bool moving = false;
+    public static bool moving = false;
+    bool turnActive;
     public int move = 5;
     public int range = 1;
     public float jumpHeight = 2;
@@ -176,6 +177,7 @@ public class TacticsMove : MonoBehaviour
                     SetHorizontalVelocity();
                 }
                 //Locomotion
+                //PlayerMove.Anim();
                 transform.forward = heading;
                 transform.position += velocity * Time.deltaTime;
             }
@@ -191,7 +193,10 @@ public class TacticsMove : MonoBehaviour
             RemoveSelectableTiles();
             moving = false;
 
+            //FindEnemies();
             TurnManager.EndTurn();
+            
+
         }
     }
 

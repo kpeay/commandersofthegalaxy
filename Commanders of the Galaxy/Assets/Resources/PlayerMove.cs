@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class PlayerMove : TacticsMove {
 
-    static Animator anim;
+    public static bool playerMoving = false;
 
     // Use this for initialization
     void Start ()
     {
         Init();
+
+        //Anim = GetComponent<Animator>;
 
     }
 	
@@ -27,10 +29,13 @@ public class PlayerMove : TacticsMove {
         {
             FindSelectableTiles();
             CheckMouse();
+            playerMoving = false;
         }
         else
         {
             Move();
+            playerMoving = true;
+            NPCMove.NPCMoving = false;
         }
 	}
 
